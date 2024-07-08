@@ -51,8 +51,8 @@ export const BentoGridItem = ({
 }) => {
   const [copied, setcopied] = useState(false);
 
-  const leftLists = ["ReactJS", "NextJS", "Typescript"];
-  const rightList = ["VueJS", "Laravel", "MySql"];
+  const leftLists = ["ReactJS", "VueJS", "NextJS"];
+  const rightList = ["Typescript", "Laravel", "Tailwind"];
 
   const handleCopy = () => {
     const text = "msholehhudin.ms@gmail.com";
@@ -102,7 +102,7 @@ export const BentoGridItem = ({
         {id === 6 && (
           // add background animation , remove the p tag
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 items-center flex justify-center text-white font-bold px-4 pointer-event-none text-3xl text-center md:text-4xl lg:text-7xl" />
+            <div className="absolute z-50 items-center flex justify-center text-white font-bold " />
           </BackgroundGradientAnimation>
         )}
 
@@ -150,7 +150,7 @@ export const BentoGridItem = ({
 
           {id === 6 && (
             <div className="relative mt-5">
-              <div className="absolute -bottom-5 right-0">
+              <div className={`absolute -bottom-5 right-0`}>
                 <Lottie
                   options={{
                     loop: copied,
@@ -164,10 +164,10 @@ export const BentoGridItem = ({
               </div>
 
               <MagicBtn
-                title={copied ? "Email Copied" : "Copy my email"}
+                title={copied ? "Email Copied" : "Copy my email address"}
                 icon={<IoCopyOutline />}
                 position="left"
-                otherClasses="!bg-[#161A31]"
+                otherClasses="!bg-[#161A31] transition "
                 handleClick={handleCopy}
               />
             </div>
