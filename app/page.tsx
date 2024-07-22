@@ -1,3 +1,4 @@
+import Clients from "@/components/Clients";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
@@ -19,6 +20,7 @@ export default function Home() {
         <h1>Helloo</h1> */}
         <Grid />
         <RecentProjects />
+        <Clients />
       </div>
     </main>
   );
