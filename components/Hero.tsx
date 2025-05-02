@@ -2,6 +2,7 @@ import { FaLocationArrow } from "react-icons/fa";
 import MagicBtn from "./ui/MagicBtn";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import AnimatedProfile from "./ui/AnimatedProfile";
 
 const Hero = () => {
   return (
@@ -22,6 +23,11 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
+      {/* I want to add my img photos here */}
+      {/* But the image that i want is like loading photos in mobile legends screen with animation moving photos */}
+
+      <AnimatedProfile />
+
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89w] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
@@ -36,7 +42,8 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi, I&apos;m{" "}
             <span className="text-purple"> Muhammad Sholehhudin</span>, a
-            Fullstack Developer with a passion for creating intuitive and engaging user interfaces.
+            Fullstack Developer with a passion for creating intuitive and
+            engaging user interfaces.
           </p>
 
           <a href="#about" className="flex gap-3 p-2">

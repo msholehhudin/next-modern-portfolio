@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  // { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building an Animation Website",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,19 +72,32 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "Bluespider Contact Center CRM - Omnichannel",
+    des: "A full-stack contact center web with real-time chat and WhatsApp API integrations (Qontak, Alibaba, Ivosight) for enhanced customer support.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    iconLists: [
+      "/vuejs.svg",
+      "/laravel.svg",
+      "/bootstrap.svg",
+      "/mysql.svg",
+      "/firebase.svg",
+      "/dock.svg",
+    ],
+    link: null,
+    isPrivate: true,
+    detail: {
+      role: "Fullstack Engineer",
+      stack: "Vue.js, Laravel, MySQL, Firebase",
+      note: "This project is deployed on private server and require client access.",
+    },
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
+    title: "CashQueen - Financial ",
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "https://cashqueen.revingerz.com/",
   },
   {
     id: 3,
@@ -173,29 +186,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Lead Fullstack Developer",
+    desc: "Developed and maintained user-facing features using modern frontend technologies and backend popular technologies. ",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Alterra Academy Frontend Bootcamp ",
+    desc: "Designed and developed web app platforms using React JS.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Freelance Web Dev Project",
+    desc: "Led the dev of a web app for a client, from initial concept to deployment on a hosting servers.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Fullstack Developer Bootcamp",
+    desc: "Learning on Dicoding Academy with Fullstack Developer Path between React as Frontend and Express as Backend tech stack.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -205,13 +218,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/msholehhudin",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/insta.svg",
+    link: "https://www.instagram.com/revingerz",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/muhammad-sholehhudin/",
   },
 ];
