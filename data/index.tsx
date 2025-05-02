@@ -72,7 +72,7 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Bluespider Contact Center - Omnichannel",
+    title: "Bluespider Contact Center CRM - Omnichannel",
     des: "A full-stack contact center web with real-time chat and WhatsApp API integrations (Qontak, Alibaba, Ivosight) for enhanced customer support.",
     img: "/p1.svg",
     iconLists: [
@@ -83,15 +83,21 @@ export const projects = [
       "/firebase.svg",
       "/dock.svg",
     ],
-    link: "https://webccaos.aosgraha.com/",
+    link: null,
+    isPrivate: true,
+    detail: {
+      role: "Fullstack Engineer",
+      stack: "Vue.js, Laravel, MySQL, Firebase",
+      note: "This project is deployed on private server and require client access.",
+    },
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
+    title: "CashQueen - Financial ",
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "https://cashqueen.revingerz.com/",
   },
   {
     id: 3,
