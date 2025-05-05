@@ -47,9 +47,12 @@ const ProjectSections = ({ projects }: ClientProjectProps) => {
             onClick={() => handleOpen(project)}
           >
             {/* <PinContainer title={link} href={link}> */}
-            <div className="border border-slate-800 rounded-2xl p-4 hover:-translate-y-4 ease-in-out transition-all cursor-pointer hover:border-purple">
+            <div className="relative border border-slate-800 rounded-2xl p-4 hover:-translate-y-4 ease-in-out transition-all cursor-pointer hover:border-purple duration-300 group">
               <div className="relative flex items-center justify-center w-[80vw] sm:w-[570px] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
+                  {/* Glow Effect */}
+                  <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-blue-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-all rounded-t-2xl pointer-events-none" />
+
                   <img src="/bg.png" alt="bg-img" />
                 </div>
                 <img src={img} alt={title} className="z-10 absolute bottom-0" />
