@@ -83,9 +83,9 @@ export const projects = [
       "/firebase.svg",
       "/dock.svg",
     ],
-    link: null,
+    link: "",
     isPrivate: true,
-    detail: {
+    details: {
       role: "Fullstack Engineer",
       stack: "Vue.js, Laravel, MySQL, Firebase",
       note: "This project is deployed on private server and require client access.",
@@ -98,14 +98,24 @@ export const projects = [
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://cashqueen.revingerz.com/",
+    isPrivate: true,
+    details: {
+      role: "Fullstack Engineer",
+      stack: "Next.js, Express.js, Prisma, PostgreSQL",
+    },
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Nike Website",
+    des: "Recreated Nike websites clone.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://github.com/adrianhajdin/ai_saas_app",
+    isPrivate: false,
+    details: {
+      role: "Frontend Engineer",
+      stack: "Next.js, Express.js, Prisma, PostgreSQL",
+    },
   },
   {
     id: 4,
@@ -114,6 +124,11 @@ export const projects = [
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/adrianhajdin/iphone",
+    isPrivate: false,
+    details: {
+      role: "Frontend Engineer",
+      stack: "Next.js, Express.js, Prisma, PostgreSQL",
+    },
   },
 ];
 
