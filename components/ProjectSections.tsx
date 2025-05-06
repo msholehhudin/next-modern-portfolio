@@ -31,9 +31,9 @@ const ProjectSections = ({ projects }: ClientProjectProps) => {
     setSelectedProject(null);
   };
 
-  useEffect(() => {
-    console.log("ini log set selected project : ", selectedProject);
-  }, [selectedProject]);
+  // useEffect(() => {
+  //   console.log("ini log set selected project : ", selectedProject);
+  // }, [selectedProject]);
 
   return (
     <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
