@@ -2,17 +2,7 @@
 import { useEffect, useState } from "react";
 import { FaLocationArrow } from "react-icons/fa";
 import ProjectModal from "./ProjectModal";
-
-interface ProjectProps {
-  id: number;
-  title: string;
-  des: string;
-  img: string;
-  iconLists: string[];
-  link: string;
-  isPrivate: boolean;
-  details: object;
-}
+import { ProjectProps } from "@/types/project";
 
 interface ClientProjectProps {
   projects: ProjectProps[];
@@ -24,6 +14,7 @@ const ProjectSections = ({ projects }: ClientProjectProps) => {
   );
 
   const handleOpen = (project: ProjectProps) => {
+    console.log("pproject selected : ", project);
     setSelectedProject(project);
   };
 
@@ -38,7 +29,7 @@ const ProjectSections = ({ projects }: ClientProjectProps) => {
   return (
     <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
       {projects.map((project) => {
-        const { id, img, title, des, iconLists } = project;
+        const { id, images, title, des, iconLists } = project;
 
         return (
           <div
@@ -55,7 +46,11 @@ const ProjectSections = ({ projects }: ClientProjectProps) => {
 
                   <img src="/bg.png" alt="bg-img" />
                 </div>
-                <img src={img} alt={title} className="z-10 absolute bottom-0" />
+                <img
+                  src={images[0]}
+                  alt={title}
+                  className="z-10 absolute bottom-0 px-8"
+                />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}
